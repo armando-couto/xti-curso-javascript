@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Aula 4</title>
+	<link rel="stylesheet" type="text/css" href="extjs/resources/css/ext-all.css">
+	<script type="text/javascript" src="extjs/ext-all.js"></script>
+	<style type="text/css">
+		body { background-color: #000; }
+		#xti { display: block; margin: 20px auto; }
+	</style>
+	<script type="text/javascript">
+		function ligar () {
+			document.getElementById("xti").src = "imagens/lampada2.jpg";
+		}
+	</script>
+</head>
+<body>
+	<p style="color: white;">Aula 4 JavaScript</p>
+	<img id="xti" onclick="ligar();" src="imagens/lampada1.jpg">
+</body>
+<script type="text/javascript">
+	Ext.onReady(function(){
+		Ext.MessageBox.alert('Hello','Hello, World!');
+	});
+</script>
+</html>
